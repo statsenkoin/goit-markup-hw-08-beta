@@ -1,0 +1,21 @@
+.section {
+  padding-block: 94px;
+}
+
+.section-features {
+  padding-bottom: 0;
+}
+
+.section-team {
+  background-color: $color-bg-secondary;
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $color-text-title;
+}
