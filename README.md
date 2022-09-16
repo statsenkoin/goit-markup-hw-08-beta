@@ -8,3 +8,16 @@
     utils/ — глобальные миксины, функции, вспомогательные селекторы и т.д.
     vendors/ — стили, миксины и прочее от третьих сторон
     main.scss — выходной файл, в котором объединяются все стили.
+
+    480/768/1200
+
+    // @media screen and (min-width: 480px) {
+    //   width: 480px;
+    // }
+    // @media screen and (min-width: 768px) {
+    //   width: 768px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   width: 1200px;
+    //   padding-block: 94px;
+    // }
