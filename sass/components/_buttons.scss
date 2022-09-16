@@ -1,7 +1,7 @@
 %button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   cursor: pointer;
 
@@ -28,32 +28,31 @@
   }
 }
 
-.hero__btn {
+.hero__btn,
+.form__btn,
+.modal-form__btn-submit {
   @extend %button;
   @extend %btn-site-theme;
 
-  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+}
+
+.hero__btn {
+  @media screen and (min-width: 1200px) {
+    width: 216px;
+  }
 }
 
 .form__btn {
-  @extend %button;
-  @extend %btn-site-theme;
-
-  padding: 10px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &--icon {
     margin-left: 10px;
     fill: currentColor;
   }
-}
-
-// --------------------------------------------------
-
-.modal-form__btn-submit {
-  @extend %button;
-  @extend %btn-site-theme;
-
-  padding: 10px 52px;
 }
 
 // -------------------------------------------------
@@ -88,7 +87,7 @@
 .filter-list__button {
   @extend %button;
 
-  padding: 8px 22px;
+  padding: 6px 22px;
 
   font-weight: 500;
   font-size: 16px;
