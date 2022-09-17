@@ -4,18 +4,18 @@
   align-items: center;
 
   gap: 10px;
-}
 
-.socials-list__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
 
-  border-radius: 50%;
-}
+    border-radius: 50%;
+  }
 
-.socials-list__icon {
-  fill: currentColor;
+  &__icon {
+    fill: currentColor;
+  }
 }

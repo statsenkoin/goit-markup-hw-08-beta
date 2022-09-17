@@ -14,6 +14,7 @@
     fonts
     vars
     buttons
+    @media - web-kit
 
     // @media screen and (min-width: 480px) {
     //   width: 480px;
@@ -59,3 +60,5 @@
                 alt="Десктопні додатки"
             />
         </picture>
+
+    sizes="(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw"
