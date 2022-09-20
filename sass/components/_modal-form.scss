@@ -134,6 +134,7 @@
   }
 
   &:checked + .modal-form__input-checkbox-icon {
+    fill: #fff;
     background-color: $color-site-accent;
     border-width: 0;
   }
@@ -145,7 +146,7 @@
   left: 0;
   transform: translate(-100%, -50%);
 
-  fill: #fff;
+  fill: transparent;
   border: 2px solid $color-text-title;
   border-radius: 2px;
 

@@ -603,6 +603,7 @@ img {
   border: 2px solid #2196f3;
 }
 .modal-form__input--checkbox:checked + .modal-form__input-checkbox-icon {
+  fill: #fff;
   background-color: #2196f3;
   border-width: 0;
 }
@@ -613,7 +614,7 @@ img {
   left: 0;
   -webkit-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
-  fill: #fff;
+  fill: transparent;
   border: 2px solid #212121;
   border-radius: 2px;
   -webkit-transition-property: border, background-color, border-width;
