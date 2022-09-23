@@ -1,0 +1,25 @@
+// ---------- Шрифти сайту ---------- /
+
+//   --font-main: 'Roboto', sans-serif;
+//   --font-logo: 'Raleway', sans-serif;
+$font-main: 'Roboto', sans-serif;
+$font-logo: 'Raleway', sans-serif;
+
+$baseFontSize: 14px;
+$responsiveWidth: 480px;
+
+html {
+  font-size: $baseFontSize;
+  @media screen and (max-width: ($responsiveWidth - 1px)) {
+    font-size: calc($baseFontSize * (100vw / $responsiveWidth));
+  }
+}
+
+body {
+  //----------------- Основний шрифт ----------------- /
+
+  font-family: $font-main;
+  // font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $color-text-main;
+}

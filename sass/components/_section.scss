@@ -1,35 +1,30 @@
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  width: 100vw;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4.2857rem;
+  padding-bottom: 4.2857rem;
 
-  &-header {
-    border-bottom: 1px solid #ececec;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  // &-header {
+  //   border-bottom: 1px solid #ececec;
+  //   padding-top: 0;
+  //   padding-bottom: 0;
+  // }
 
-  &-hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  // &-team {
+  //   background-color: $color-bg-secondary;
+  // }
 
-  &-activity {
-    display: none;
-  }
-
-  &-team {
-    background-color: $color-bg-secondary;
-  }
-
-  &-footer {
-    background-color: $color-bg-footer;
-  }
+  // &-footer {
+  //   background-color: $color-bg-footer;
+  // }
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 2.1429rem;
 
     font-weight: 700;
-    font-size: 28px;
+    font-size: 2rem;
     line-height: 1.18;
 
     text-align: center;
@@ -38,37 +33,29 @@
     color: $color-text-title;
   }
 
-  @media screen and (max-width: 480px) {
-    width: 480px;
+  // @media screen and (max-width: 480px) {
+  //   width: 480px;
+  // }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
   }
 
   // 769px->
   @media screen and (min-width: 1200px) {
+    max-width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &-header {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
+    // &-header {
+    //   padding-top: 0;
+    //   padding-bottom: 0;
+    // }
 
-    &-hero {
-      padding-top: 200px;
-      padding-bottom: 200px;
-    }
-
-    &-features {
-      padding-bottom: 0;
-    }
-
-    &-activity {
-      display: block;
-    }
-
-    &-footer {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
+    // &-footer {
+    //   padding-top: 60px;
+    //   padding-bottom: 60px;
+    // }
 
     &__title {
       margin-bottom: 50px;

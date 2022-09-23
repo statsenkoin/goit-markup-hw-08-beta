@@ -1,3 +1,9 @@
+.section-features {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+
 .feature-list {
   @media screen and (max-width: 767px) {
     &__item {
@@ -6,7 +12,7 @@
     }
 
     &__item:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 2.1429rem;
     }
 
     &__title {
@@ -36,23 +42,23 @@
     align-items: center;
 
     width: 100%;
-    height: 120px;
+    height: 8.5714rem;
     background-color: $color-bg-secondary;
-    border-radius: 4px;
+    border-radius: 0.2857rem;
   }
 
   &__title {
-    margin-top: 30px;
+    margin-top: 2.1429rem;
 
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.14;
     text-transform: uppercase;
     color: $color-text-title;
   }
 
   &__text {
-    margin-top: 10px;
+    margin-top: 0.7143rem;
 
     font-weight: 400;
     line-height: 1.71;

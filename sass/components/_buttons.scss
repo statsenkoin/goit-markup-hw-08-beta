@@ -7,7 +7,7 @@
 
 %btn-site-theme {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.1429rem;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
@@ -29,8 +29,8 @@
   @extend %button;
   @extend %btn-site-theme;
 
-  width: 200px;
-  height: 50px;
+  width: 14.2857rem;
+  height: 3.5714rem;
 }
 
 .hero__btn {
@@ -45,18 +45,21 @@
   align-items: center;
 
   &--icon {
-    margin-left: 10px;
+    margin-left: 0.7143rem;
     fill: currentColor;
   }
 }
 
 .filter-list__button {
   @extend %button;
-
-  padding: 6px 22px;
+  // padding: 6px 22px;
+  padding-top: 0.4286rem;
+  padding-bottom: 0.4286rem;
+  padding-left: 1.5714rem;
+  padding-right: 1.5714rem;
 
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.1429rem;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: $color-text-title;
@@ -80,8 +83,8 @@
   align-items: center;
   justify-content: center;
 
-  width: 30px;
-  height: 30px;
+  width: 2.1429rem;
+  height: 2.1429rem;
   border-radius: 50%;
 
   color: $color-site-dark;
@@ -105,8 +108,8 @@
 .menu-btn {
   @extend %button;
 
-  width: 40px;
-  height: 40px;
+  width: 2.8571rem;
+  height: 2.8571rem;
 
   color: $color-site-dark;
   background-color: $color-bg-primary;
