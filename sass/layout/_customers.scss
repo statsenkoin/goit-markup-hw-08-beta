@@ -1,11 +1,12 @@
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  // gap: 30px;
+  gap: 2.1429rem;
 
   &__item {
     display: block;
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 2.1429rem) / 2);
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 60px) / 3);
@@ -21,7 +22,8 @@
     justify-content: center;
     align-items: center;
 
-    height: 92px;
+    // height: 92px;
+    height: 6.5714rem;
 
     color: #afb1b8;
     border: 1px solid #afb1b8;
@@ -31,6 +33,10 @@
   }
 
   &__icon {
+    // width: 106px;
+    // height: 60px;
+    width: 7.5714rem;
+    height: 4.2857rem;
     fill: currentColor;
   }
 

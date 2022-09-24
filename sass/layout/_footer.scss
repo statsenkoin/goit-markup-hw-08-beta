@@ -2,24 +2,28 @@
   text-align: center;
 
   & .address {
-    margin-top: 20px;
+    // margin-top: 20px;
+    margin-top: 1.4286rem;
   }
 
   & .address-list__item:not(:first-child) {
-    margin-top: 8px;
+    // margin-top: 8px;
+    margin-top: 0.5714rem;
   }
 
   & .join-box,
   & .form-subscribe {
-    margin-top: 60px;
+    // margin-top: 60px;
+    margin-top: 4.2857rem;
   }
 
   & .join-box__title,
   & .form-subscribe__title {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    margin-bottom: 1.4286rem;
 
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
 
     color: $color-text-secondary;
@@ -27,11 +31,14 @@
 
   & .form__input {
     width: 100%;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 15px;
+    // padding-top: 14px;
+    // padding-bottom: 14px;
+    // padding-left: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.0714rem;
 
-    font-size: 16px;
+    font-size: 1.1429rem;
     line-height: 1.25;
 
     color: $color-text-contacts;
@@ -43,7 +50,8 @@
   }
 
   & .form__btn {
-    margin-top: 20px;
+    // margin-top: 20px;
+    margin-top: 1.4286rem;
     margin-left: auto;
     margin-right: auto;
   }

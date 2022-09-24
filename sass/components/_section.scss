@@ -12,13 +12,18 @@
   //   padding-bottom: 0;
   // }
 
-  // &-team {
-  //   background-color: $color-bg-secondary;
-  // }
+  &-hero {
+    padding-top: 8.4286rem;
+    padding-bottom: 8.4286rem;
+  }
 
-  // &-footer {
-  //   background-color: $color-bg-footer;
-  // }
+  &-team {
+    background-color: $color-bg-secondary;
+  }
+
+  &-footer {
+    background-color: $color-bg-footer;
+  }
 
   &__title {
     margin-bottom: 2.1429rem;
@@ -52,10 +57,19 @@
     //   padding-bottom: 0;
     // }
 
-    // &-footer {
-    //   padding-top: 60px;
-    //   padding-bottom: 60px;
-    // }
+    &-hero {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    &-features {
+      padding-bottom: 0;
+    }
+
+    &-footer {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 
     &__title {
       margin-bottom: 50px;
