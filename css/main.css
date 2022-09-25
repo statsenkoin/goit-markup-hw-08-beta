@@ -1392,6 +1392,7 @@ img {
   color: #2196f3;
 }
 .mobile-menu__nav-link--current {
+  font-size: 2.8571rem;
   color: #2196f3;
 }
 .mobile-menu__contact-item:not(:last-child) {
