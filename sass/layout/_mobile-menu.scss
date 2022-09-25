@@ -11,10 +11,14 @@
   min-width: 100vw;
   min-height: 100hw;
 
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-right: 40px;
-  padding-left: 40px;
+  // padding-top: 48px;
+  // padding-bottom: 48px;
+  padding-top: 3.4286rem;
+  padding-bottom: 3.4286rem;
+  // padding-right: 40px;
+  // padding-left: 40px;
+  padding-right: 2.8571rem;
+  padding-left: 2.8571rem;
   background-color: $color-site-accent;
   z-index: 999;
 
@@ -29,8 +33,17 @@
 
   & .menu-btn {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    // top: 10px;
+    // right: 15px;
+    top: 0.7143rem;
+    right: 1.0714rem;
+  }
+
+  & .menu__btn--icon {
+    // width: 40px;
+    // height: 40px;
+    width: 2.8571rem;
+    height: 2.8571rem;
   }
 }
 
@@ -59,11 +72,13 @@
   // nav menu -------------------
 
   &__nav-item:not(:last-child) {
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
+    margin-bottom: 2.2857rem;
   }
 
   &__nav-link {
-    font-size: 40px;
+    // font-size: 40px;
+    font-size: 2.8571rem;
     color: $color-text-title;
   }
 
@@ -73,23 +88,26 @@
   }
 
   &__nav-link--current {
-    font-size: 40px;
+    // font-size: 40px;
     color: $color-site-accent;
   }
 
   // contact menu -----------
 
   &__contact-item:not(:last-child) {
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
+    margin-bottom: 2.2857rem;
   }
 
   &__contact-link--tel {
-    font-size: 34px;
+    // font-size: 34px;
+    font-size: 2.4286rem;
     color: $color-site-accent;
   }
 
   &__contact-link--mail {
-    font-size: 24px;
+    // font-size: 24px;
+    font-size: 1.7143rem;
     color: $color-text-main;
   }
 
@@ -102,20 +120,25 @@
 
   &__socials-list {
     display: flex;
-    margin-top: 64px;
+    // margin-top: 64px;
+    margin-top: 4.5714rem;
   }
 
   &__socials-item:not(:last-child) {
-    margin-right: 10px;
+    // margin-right: 10px;
+    margin-right: 0.7143rem;
   }
 
   &__socials-item:not(:last-child) {
     .mobile-menu__socials-link::after {
       content: '';
 
-      margin-left: 10px;
-      width: 2px;
-      height: 22px;
+      // margin-left: 10px;
+      margin-left: 0.7143rem;
+      // width: 2px;
+      width: 0.1429rem;
+      // height: 22px;
+      height: 1.5714rem;
       background-color: rgba(33, 33, 33, 0.2);
     }
   }
@@ -123,7 +146,8 @@
   &__socials-link {
     display: flex;
 
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 1.2857rem;
     line-height: 1.22;
 
     color: $color-site-accent;
