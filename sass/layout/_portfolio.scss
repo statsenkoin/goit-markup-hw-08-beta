@@ -1,12 +1,16 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 8px;
-  row-gap: 15px;
-  margin-bottom: 40px;
+  // column-gap: 8px;
+  column-gap: 0.5714rem;
+  // row-gap: 15px;
+  row-gap: 1.0714rem;
+  // margin-bottom: 40px;
+  margin-bottom: 2.8571rem;
 
   @media screen and (max-width: 767px) {
-    width: 326px;
+    width: 70vw;
+    max-width: 326px;
   }
 
   @media screen and (min-width: 768px) {
@@ -21,12 +25,14 @@
 
 .project-list {
   &__item {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
 
   @media screen and (max-width: 767px) {
     &__item:not(:last-child) {
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
+      margin-bottom: 2.1429rem;
     }
   }
 
@@ -37,13 +43,13 @@
 
     &__item {
       display: flex;
-      width: 354px;
+      max-width: 354px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     &__item {
-      width: 370px;
+      max-width: 370px;
     }
   }
 }
@@ -78,10 +84,14 @@
     top: 0;
     left: 0;
 
-    padding-top: 77px;
-    padding-bottom: 77px;
-    padding-right: 24px;
-    padding-left: 24px;
+    // padding-top: 77px;
+    // padding-bottom: 77px;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    // padding-right: 24px;
+    // padding-left: 24px;
+    padding-right: 1.7143rem;
+    padding-left: 1.7143rem;
 
     @media screen and (min-width: 768px) {
       padding-top: 49px;
@@ -92,7 +102,8 @@
       padding-bottom: 63px;
     }
 
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 1.2857rem;
     line-height: 1.56;
 
     color: $color-text-secondary;
@@ -105,10 +116,14 @@
 
   &__card {
     flex-grow: 1;
-    padding-top: 20px;
-    padding-bottom: 19px;
-    padding-right: 23px;
-    padding-left: 23px;
+    // padding-top: 20px;
+    padding-top: 1.4286rem;
+    // padding-bottom: 19px;
+    padding-bottom: 1.3571rem;
+    // padding-right: 23px;
+    padding-right: 1.6429rem;
+    // padding-left: 23px;
+    padding-left: 1.6429rem;
 
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
@@ -117,17 +132,20 @@
 
   &__title {
     font-weight: 700;
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 1.2857rem;
     line-height: 2;
     letter-spacing: 0.06em;
     color: $color-text-title;
   }
 
   &__text {
-    margin-top: 4px;
+    // margin-top: 4px;
+    margin-top: 0.2857rem;
 
     font-weight: 400;
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: 1.1429rem;
     line-height: 1.88;
     color: $color-text-main;
   }
