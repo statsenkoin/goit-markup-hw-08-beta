@@ -6,12 +6,12 @@ $font-main: 'Roboto', sans-serif;
 $font-logo: 'Raleway', sans-serif;
 
 $baseFontSize: 14px;
-$responsiveWidth: 480px;
+$mobileWidth: 480px;
 
 html {
   font-size: $baseFontSize;
-  @media screen and (max-width: ($responsiveWidth - 1px)) {
-    font-size: calc($baseFontSize * (100vw / $responsiveWidth));
+  @media screen and (max-width: ($mobileWidth - 1px)) {
+    font-size: calc($baseFontSize * (100vw / $mobileWidth));
   }
 }
 
