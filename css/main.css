@@ -660,6 +660,117 @@ img {
   margin-right: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100hw;
+    padding-top: 3.4286rem;
+    padding-bottom: 3.4286rem;
+    padding-right: 2.8571rem;
+    padding-left: 2.8571rem;
+    background-color: #2196f3;
+    z-index: 999;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    -webkit-transition-property: background-color, -webkit-transform;
+    transition-property: background-color, -webkit-transform;
+    transition-property: transform, background-color;
+    transition-property: transform, background-color, -webkit-transform;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-container.is-open {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    background-color: #fff;
+  }
+  .menu-container .menu-btn {
+    position: absolute;
+    top: 0.7143rem;
+    right: 1.0714rem;
+  }
+  .menu-container .menu-btn__icon {
+    width: 2.8571rem;
+    height: 2.8571rem;
+  }
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .mobile-menu .nav {
+    margin-bottom: auto;
+  }
+  .mobile-menu .link {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  .mobile-menu__nav-item:not(:last-child) {
+    margin-bottom: 2.2857rem;
+  }
+  .mobile-menu__nav-link {
+    font-size: 2.8571rem;
+    color: #212121;
+  }
+  .mobile-menu__nav-link:hover, .mobile-menu__nav-link:focus {
+    color: #2196f3;
+  }
+  .mobile-menu__nav-link--current {
+    font-size: 2.8571rem;
+    color: #2196f3;
+  }
+  .mobile-menu__contact-item:not(:last-child) {
+    margin-bottom: 2.2857rem;
+  }
+  .mobile-menu__contact-link--tel {
+    font-size: 2.4286rem;
+    color: #2196f3;
+  }
+  .mobile-menu__contact-link--mail {
+    font-size: 1.7143rem;
+    color: #757575;
+  }
+  .mobile-menu__contact-link:hover, .mobile-menu__contact-link:focus {
+    color: #2196f3;
+  }
+  .mobile-menu__socials-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4.5714rem;
+  }
+  .mobile-menu__socials-item:not(:last-child) {
+    margin-right: 0.7143rem;
+  }
+  .mobile-menu__socials-item:not(:last-child) .mobile-menu__socials-link::after {
+    content: "";
+    margin-left: 0.7143rem;
+    width: 0.1429rem;
+    height: 1.5714rem;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+  .mobile-menu__socials-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.2857rem;
+    line-height: 1.22;
+    color: #2196f3;
+  }
+}
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,15 +786,11 @@ img {
 .header .menu-btn {
   margin-left: auto;
 }
-.header .menu__btn--icon {
+.header .menu-btn__icon {
   width: 2.8571rem;
   height: 2.8571rem;
 }
-@media screen and (max-width: 767px) {
-  .header .nav__list, .header .contact-list {
-    display: none;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .header .logo {
     padding-top: 26px;
@@ -692,29 +799,45 @@ img {
   .header .menu-btn {
     display: none;
   }
-  .header .nav__list {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 88px;
+  }
+  .menu .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 50px;
-    margin-left: 88px;
   }
-  .header .nav__link, .header .nav__link--current {
+  .menu__nav-link, .menu__nav-link--current {
     padding-top: 32px;
     padding-bottom: 31px;
   }
-  .header .contact-list {
+  .menu__contact-list {
     margin-left: auto;
   }
-  .header .contact-list__link {
+  .menu__contact-list__link {
     font-size: 12px;
+  }
+  .menu__socials-list {
+    display: none;
   }
 }
 @media screen and (max-width: 1200px) {
-  .header .contact-list__item:not(:last-child) {
+  .contact-list__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -723,10 +846,10 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  .header .nav__list {
+  .nav__list {
     margin-left: 93px;
   }
-  .header .contact-list {
+  .contact-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -736,13 +859,12 @@ img {
     margin-left: auto;
     gap: 50px;
   }
-  .header .contact-list__link {
+  .contact-list__link {
     font-size: 14px;
     padding-top: 32px;
     padding-bottom: 31px;
   }
 }
-
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -1321,115 +1443,4 @@ img {
 }
 .footer__socials-list .socials-list__link:hover, .footer__socials-list .socials-list__link:focus {
   background-color: #2196f3;
-}
-
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  min-width: 100vw;
-  min-height: 100hw;
-  padding-top: 3.4286rem;
-  padding-bottom: 3.4286rem;
-  padding-right: 2.8571rem;
-  padding-left: 2.8571rem;
-  background-color: #2196f3;
-  z-index: 999;
-  -webkit-transform: translateY(-150%);
-          transform: translateY(-150%);
-  -webkit-transition-property: background-color, -webkit-transform;
-  transition-property: background-color, -webkit-transform;
-  transition-property: transform, background-color;
-  transition-property: transform, background-color, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-container.is-open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  background-color: #fff;
-}
-.menu-container .menu-btn {
-  position: absolute;
-  top: 0.7143rem;
-  right: 1.0714rem;
-}
-.menu-container .menu__btn--icon {
-  width: 2.8571rem;
-  height: 2.8571rem;
-}
-
-.mobile-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-}
-.mobile-menu .nav {
-  margin-bottom: auto;
-}
-.mobile-menu .link {
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-.mobile-menu__nav-item:not(:last-child) {
-  margin-bottom: 2.2857rem;
-}
-.mobile-menu__nav-link {
-  font-size: 2.8571rem;
-  color: #212121;
-}
-.mobile-menu__nav-link:hover, .mobile-menu__nav-link:focus {
-  color: #2196f3;
-}
-.mobile-menu__nav-link--current {
-  font-size: 2.8571rem;
-  color: #2196f3;
-}
-.mobile-menu__contact-item:not(:last-child) {
-  margin-bottom: 2.2857rem;
-}
-.mobile-menu__contact-link--tel {
-  font-size: 2.4286rem;
-  color: #2196f3;
-}
-.mobile-menu__contact-link--mail {
-  font-size: 1.7143rem;
-  color: #757575;
-}
-.mobile-menu__contact-link:hover, .mobile-menu__contact-link:focus {
-  color: #2196f3;
-}
-.mobile-menu__socials-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 4.5714rem;
-}
-.mobile-menu__socials-item:not(:last-child) {
-  margin-right: 0.7143rem;
-}
-.mobile-menu__socials-item:not(:last-child) .mobile-menu__socials-link::after {
-  content: "";
-  margin-left: 0.7143rem;
-  width: 0.1429rem;
-  height: 1.5714rem;
-  background-color: rgba(33, 33, 33, 0.2);
-}
-.mobile-menu__socials-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2857rem;
-  line-height: 1.22;
-  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
